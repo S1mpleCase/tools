@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 img = Image.open("/Users/adam/Desktop/011.png")
 
 # Create the watermark image
-watermark_size = (120,50)
+watermark_size = (120,50) # 调整水印的水平宽度，垂直宽度
 watermark = Image.new("RGBA", watermark_size, (255, 255, 255, 0))
 draw = ImageDraw.Draw(watermark)
 text = "仅供车险使用"
